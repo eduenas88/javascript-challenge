@@ -2,7 +2,6 @@
 let tableData = data;
 var tbody = d3.select("tbody");
 // YOUR CODE HERE!
-​
 function newTable(data) {
   tbody.html("");
   data.forEach((sighting) => {
@@ -16,8 +15,7 @@ function newTable(data) {
 
 var button = d3.select("#filter-btn");
 button.on("click", function() {
-  d3.event.preventDefault();
-​
+d3.event.preventDefault();
 var inputElement = d3.select("#datetime");
 var inputValue = inputElement.property("value");
 console.log(inputValue);
@@ -29,4 +27,4 @@ console.log(inputValue);
 });
 
 // Build Table with data.js 
- newTable(tableData);
+newTable(tableData);
