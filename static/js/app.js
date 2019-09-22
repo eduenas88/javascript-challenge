@@ -1,13 +1,17 @@
 // from data.js
-var tableData = d3.select("data");
-
+let tableData = data;
 console.log(data);
+var tbody = d3.select("tbody"); 
+
+
 // YOUR CODE HERE!
-tableData.forEach((data) => {
+function tableData(data){
+  tbody.html(""); 
+  data.forEach((sighting) => {
     var row = tbody.append("tr");
-    Object.entries(data).forEach(([key, value]) => {
+    Object.entries(sighting).forEach(([key, value]) => {
       var cell = row.append("td");
       cell.text(value);
     });
   });
-  
+}; 
