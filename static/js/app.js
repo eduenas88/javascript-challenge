@@ -14,9 +14,7 @@ function newTable(data){
     });
   });
 };
-​
-​
-​
+
 ​
 button.on("click", function() {
 ​
